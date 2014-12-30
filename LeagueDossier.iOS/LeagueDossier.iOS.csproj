@@ -115,11 +115,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Other Files\AppDelegate.cs" />
-    <Compile Include="Main.cs" />
     <Compile Include="Main Menu\MainMenuViewController.cs" />
     <Compile Include="Main Menu\MainMenuViewController.designer.cs">
       <DependentUpon>MainMenuViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Other Files\Main.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
