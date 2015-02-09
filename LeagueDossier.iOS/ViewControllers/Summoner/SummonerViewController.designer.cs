@@ -4,26 +4,18 @@
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
-using System;
 using Foundation;
-using UIKit;
+using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace LeagueDossier.iOS
 {
-	[Register ("MainMenuViewController")]
-	partial class MainMenuViewController
+	[Register ("SummonerViewController")]
+	partial class SummonerViewController
 	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UICollectionView CollectionView { get; set; }
-
 		void ReleaseDesignerOutlets ()
 		{
-			if (CollectionView != null) {
-				CollectionView.Dispose ();
-				CollectionView = null;
-			}
 		}
 	}
 }

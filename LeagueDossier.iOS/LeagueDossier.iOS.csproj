@@ -21,9 +21,10 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>i386</MtouchArch>
     <MtouchLink>None</MtouchLink>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -115,11 +116,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Other Files\AppDelegate.cs" />
-    <Compile Include="Main Menu\MainMenuViewController.cs" />
-    <Compile Include="Main Menu\MainMenuViewController.designer.cs">
-      <DependentUpon>MainMenuViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Other Files\Main.cs" />
+    <Compile Include="ViewControllers\Main Menu\MainMenuViewController.cs" />
+    <Compile Include="ViewControllers\Main Menu\MainMenuViewController.designer.cs">
+      <DependentUpon>..\..\Main Menu\MainMenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Base\BaseMainMenuCell.cs" />
+    <Compile Include="ViewControllers\Summoner\SummonerMainMenuCell.cs" />
+    <Compile Include="ViewControllers\Summoner\SummonerViewController.cs" />
+    <Compile Include="ViewControllers\Summoner\SummonerViewController.designer.cs">
+      <DependentUpon>SummonerViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
@@ -127,7 +134,9 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Other Files\" />
-    <Folder Include="Main Menu\" />
     <Folder Include="Resources\Images\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="ViewControllers\Base\" />
+    <Folder Include="ViewControllers\Summoner\" />
   </ItemGroup>
 </Project>
