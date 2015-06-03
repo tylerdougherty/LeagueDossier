@@ -4,6 +4,7 @@ using UIKit;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Drawing;
+using iLOL;
 
 namespace LeagueDossier.iOS
 {
@@ -24,10 +25,16 @@ namespace LeagueDossier.iOS
 			CollectionView.RegisterClassForCell(typeof(SummonerMainMenuCell), BaseMainMenuCell.ID);
 			CollectionView.IndicatorStyle = UIScrollViewIndicatorStyle.White;
 			CollectionView.ReloadData();
+
+
+			iLOL.iLOL.Init();
+
+			var a = new Summoner("psiguard");
 		}
 
 		public override void ViewWillAppear(bool animated)
 		{
+			NavigationController.NavigationBar.Translucent = true;
 			NavigationController.SetNavigationBarHidden(true, false);
 		}
 

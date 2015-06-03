@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueDossier.iOS", "LeagueDossier.iOS\LeagueDossier.iOS.csproj", "{3A4F8A4E-8C4F-4086-A1A7-67BFEE964844}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iLOL", "iLOL\iLOL.csproj", "{A3D17010-1BB6-48C8-9B57-9138D551458A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -25,8 +27,17 @@ Global
 		{3A4F8A4E-8C4F-4086-A1A7-67BFEE964844}.Release|iPhone.Build.0 = Release|iPhone
 		{3A4F8A4E-8C4F-4086-A1A7-67BFEE964844}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{3A4F8A4E-8C4F-4086-A1A7-67BFEE964844}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = LeagueDossier.iOS\LeagueDossier.iOS.csproj
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Release|iPhone.Build.0 = Release|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A3D17010-1BB6-48C8-9B57-9138D551458A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

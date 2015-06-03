@@ -113,6 +113,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Other Files\Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Other Files\AppDelegate.cs" />
@@ -138,5 +139,11 @@
     <Folder Include="ViewControllers\" />
     <Folder Include="ViewControllers\Base\" />
     <Folder Include="ViewControllers\Summoner\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iLOL\iLOL.csproj">
+      <Project>{A3D17010-1BB6-48C8-9B57-9138D551458A}</Project>
+      <Name>iLOL</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

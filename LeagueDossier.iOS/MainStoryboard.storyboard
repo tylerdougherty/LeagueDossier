@@ -53,13 +53,57 @@
                     <view key="view" contentMode="scaleToFill" id="131">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="216" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="64" width="64" height="64"/>
+                                <constraints>
+                                    <constraint id="221" firstItem="216" firstAttribute="width" constant="64"/>
+                                    <constraint id="224" firstItem="216" firstAttribute="height" constant="64"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Summoner Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="217" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="72" y="64" width="201" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="218" firstItem="217" firstAttribute="width" constant="201"/>
+                                    <constraint id="225" firstItem="217" firstAttribute="height" constant="32"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level 30" lineBreakMode="tailTruncation" minimumFontSize="10" id="226" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="72" y="104" width="75" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="227" firstItem="226" firstAttribute="width" constant="75"/>
+                                    <constraint id="228" firstItem="226" firstAttribute="height" constant="24"/>
+                                </constraints>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                        <constraints>
+                            <constraint firstItem="217" firstAttribute="leading" secondItem="216" secondAttribute="trailing" constant="8" id="219"/>
+                            <constraint firstItem="217" firstAttribute="top" secondItem="127" secondAttribute="bottom" constant="0.0" id="220"/>
+                            <constraint firstItem="216" firstAttribute="top" secondItem="127" secondAttribute="bottom" constant="0.0" id="222"/>
+                            <constraint firstItem="216" firstAttribute="leading" secondItem="131" secondAttribute="leading" constant="0.0" id="223"/>
+                            <constraint firstItem="226" firstAttribute="leading" secondItem="216" secondAttribute="trailing" constant="8" id="229"/>
+                            <constraint firstItem="226" firstAttribute="top" secondItem="217" secondAttribute="bottom" constant="8" id="230"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="SummonerIconView" destination="216" id="name-outlet-216"/>
+                        <outlet property="SummonerNameLabel" destination="217" id="name-outlet-217"/>
+                        <outlet property="SummonerLevelLabel" destination="226" id="name-outlet-226"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="132" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="475" y="33"/>
+            <point key="canvasLocation" x="623" y="33"/>
         </scene>
         <scene sceneID="141">
             <objects>
